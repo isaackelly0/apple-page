@@ -8,8 +8,11 @@ header {
 }
 nav {
 }
-ul {
+.navbar {
   display: flex;
   list-style: none;
   justify-content: space-between;
+}
+.page {
+  grid-column: 2 / 8;
 }
