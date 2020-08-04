@@ -5,6 +5,8 @@
 }
 header {
   grid-column: 3 / 7;
+  position: relative;
+  top: -900%;
 }
 nav {
 }
@@ -15,16 +17,35 @@ nav {
   border-style: solid;
   border-color: black;
   border-width: thin;
+  border-radius: 5px;
+  background: linear-gradient(#656565 50%, #8e8e8e 50%);
+}
+.navbar li {
+  border-width: 0 2px 0 0;
+  border-style: groove;
+  padding-right: 22px;
+}
+li: last-child {
+  border-style: none;
+}
+.navbar li p {
+  color: white;
+}
+.navbar li input {
+  margin-top: 10px;
+  border-radius: 20px;
+  margin-right: 10px;
 }
 .page {
-  grid-column: 2 / 7;
-  grid-row: 2;
+  grid-column: 2 / 6;
+  grid-row: 1;
 }
-.article {
-  /* backround: url("./images/adult-adventure-backpacker-climb.jpg"); */
+.article img {
+  width: 100%;
 }
 .links {
-  grid-row: 3;
+  grid-row: 2;
   list-style: none;
   display: flex;
+  justify-content: space-around;
 }
